@@ -59,7 +59,7 @@ describe("anchor-vault-2024", () => {
 
   it("Is initialized!", async () => {
     // Add your test here.
-    const tx = await program.methods.initialize().accounts({
+    const tx = await program.methods.initialize().accountsPartial({
       vault,
       maker: maker.publicKey,
       vaultState,
